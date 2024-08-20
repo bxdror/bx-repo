@@ -1,0 +1,26 @@
+[pdf2pdf]
+;remove_macro will remove javascript and document open action
+remove_macro=1
+;remove_embedded_object will remove all embedded objects in pdf file 
+;included: attachments, embedded files, ...
+remove_embedded_object=1
+;remove_hyperlink will remove hyperlink annotations and change hyperlinks in text. It will increase sanitizing time.
+;0: do not remove any kind of hyperlinks.
+;1: remove hyperlink annotations and pdf reader may convert text links as visible links.
+;2: remove hyperlink annotations and replace text links by null links which will prevent pdf reader converting text links as visible links.
+remove_hyperlink=1
+process_image=1
+; set this config to reduce image quality, default image quality is high(60%) compared with the original
+; avaliable values are: low(10%), medium(40%), high(60%), very high(100%)
+; this config will be applied when process_image=1
+image_quality=high
+;remove_embedded_font will remove all embedded fonts in pdf file; if enable, it will break the Hebrew or Arabic (non-English) content
+remove_embedded_font=0
+;remove_metadata will remove many privacy metadata information in pdf file
+remove_metadata=0
+;remove form will remove operational fields
+remove_form=1
+;strict_validation will check file structure compliance. 
+;If file structure does not comply the standard, wrong file structure error will be returned.
+;When this configuration is set to 0, files with light invalid structure will be processed and output will be returned.
+strict_validation=0
